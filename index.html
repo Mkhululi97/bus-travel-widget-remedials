@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bus Trips Calculator</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="heading-container">
+        <img src="bus-school.png" alt="school bus icon" width=" 40px" />
+        <h1>Bus Travel Widget</h1>
+      </div>
+      <div class="error-div hidden">
+        <p class="show-error-text">
+          <!-- Please select starting location and travelling time -->
+        </p>
+      </div>
+      <div class="point-location-container">
+        <div class="points-container">
+          <label class="displays-block" for="#">Points:</label>
+          <input
+            class="full-width points"
+            type="number"
+            placeholder="Enter points"
+          />
+        </div>
+
+        <div class="start-location-container">
+          <label class="displays-block" for="dropdown">Start location:</label>
+          <select class="full-width" name="location" id="dropdown">
+            <option value="">Select start location</option>
+            <option value="Khayelitsha">Khayelitsha</option>
+            <option value="Dunoon">Dunoon</option>
+            <option value="MitchellsPlain">Mitchells Plain</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <p class="travel-times">Travel Times:</p>
+        <label for="radio">Peak</label>
+        <input
+          class="radio-btn peak-radio-btn"
+          type="radio"
+          value="peak"
+          name="travel-times"
+        />
+        <label for="radio">Off peak</label>
+        <input
+          class="radio-btn"
+          type="radio"
+          value="off peak"
+          name="travel-times"
+        />
+      </div>
+      <div class="btn-return-container">
+        <button class="calculate-btn">Calculate</button>
+        <input class="return-trip-checkbox" type="checkbox" />
+        <label for="checkbox">Return Trip</label>
+      </div>
+
+      <div class="calculations-container">
+        <div class="caclculations-heading">
+          <img
+            src="calculator.png"
+            alt="a simple calculator icon"
+            width=" 40px"
+          />
+          <h3>Calculations</h3>
+        </div>
+
+        <div class="number-of-trips-container">
+          <label class="displays-block" for="#">Number of single trips:</label>
+          <input
+            disabled
+            class="single-trips full-width"
+            type="text"
+            placeholder="Number of trips"
+          />
+        </div>
+
+        <div class="price-per-trip-contianer">
+          <label class="displays-block" for="#">Price per trip</label>
+          <input
+            disabled
+            class="price-per-trip full-width"
+            type="text"
+            placeholder="Price per trip"
+          />
+        </div>
+        <div class="return-trips-contianer">
+          <label class="displays-block" for="#">Number of return trips:</label>
+          <input
+            disabled
+            class="return-trip full-width"
+            type="text"
+            placeholder="Number of return trips"
+          />
+        </div>
+
+        <div class="return-price-per-trip-container">
+          <label class="displays-block" for="#">Price per trip (return):</label>
+          <input
+            disabled
+            class="price-per-return-trip full-width"
+            type="text"
+            placeholder="Price per trip"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="functions/BusTravel.js" charset="utf-8"></script>
+    <script src="functions/busTravelDOM.js" charset="utf-8"></script>
+  </body>
+</html>

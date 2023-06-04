@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #240046;
+  color: #e0aaff;
+}
+
+.displays-block {
+  display: block;
+}
+.error-div {
+  max-width: 100%;
+  padding-block: 7px;
+  background-color: #f4b4bd;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-error-text {
+  padding-inline: 20px;
+}
+.hidden {
+  display: none;
+}
+.heading-container,
+.caclculations-heading {
+  padding-block: 15px;
+}
+
+.heading-container,
+.caclculations-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.full-width {
+  width: 100%;
+}
+
+.main-container {
+  max-width: 40.44rem;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.points-container,
+.start-location-container,
+.number-of-trips-container,
+.price-per-trip-contianer,
+.return-trips-contianer {
+  margin-bottom: 20px;
+}
+p,
+label {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+input,
+select {
+  padding: 7px;
+  font-size: 1.5rem;
+  color: #5a189a;
+}
+.btn-return-container {
+  margin-block: 40px;
+}
+.peak-radio-btn,
+button {
+  margin-right: 20px;
+}
+button {
+  padding: 10px;
+  font-size: 2rem;
+  background: none;
+  color: #fff;
+  border: 3px solid#9d4edd;
+}
+.calculations-container {
+  padding-bottom: 45px;
+}
+
+@media (min-width: 48rem) {
+  .main-container {
+    max-width: 76rem;
+    margin: 0 auto;
+  }
+  .heading-container {
+    padding-block: 35px;
+  }
+
+  .heading-container,
+  .caclculations-heading {
+    gap: 20px;
+  }
+
+  .caclculations-heading {
+    padding-bottom: 35px;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p,
+  label {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  input,
+  select {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 2rem;
+  }
+  button:hover {
+    background-color: #e0aaff;
+    color: #10002b;
+  }
+}
